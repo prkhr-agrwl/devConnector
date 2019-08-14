@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://prkhr:prkhr@cluster0-kxrjj.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "loner",
+  "githubClientId": "052c91274ce92a750e0d",
+  "githubSecret": "7ac051b61fbf82ff82bc6defb8d966f821fdc8de"
+}
