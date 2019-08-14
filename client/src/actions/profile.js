@@ -10,7 +10,6 @@ import {
   ACCOUNT_DELETED,
   GET_REPOS
 } from './types';
-// import profile from '../reducers/profile';
 
 //get current user's profile
 export const getCurrentProfile = () => async dispatch => {
@@ -32,6 +31,7 @@ export const getCurrentProfile = () => async dispatch => {
 //get all profiles
 export const getProfiles = () => async dispatch => {
   dispatch({ type: CLEAR_PROFILE });
+
   try {
     const res = await axios.get('/api/profile');
 
@@ -49,6 +49,8 @@ export const getProfiles = () => async dispatch => {
 
 //get a profile by ID
 export const getProfileById = user_id => async dispatch => {
+  dispatch({ type: CLEAR_PROFILE });
+
   try {
     const res = await axios.get(`/api/profile/user/${user_id}`);
 
